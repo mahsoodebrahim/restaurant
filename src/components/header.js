@@ -2,7 +2,7 @@ export default function header() {
   const header = document.createElement("header");
 
   //titleLink
-  header.appendChild(titleLink("HODL"));
+  header.appendChild(titleLink("Grill House"));
 
   // navigation
   header.appendChild(navigation());

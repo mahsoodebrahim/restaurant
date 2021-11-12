@@ -1,4 +1,9 @@
-export default function hero() {
+export default function hero(
+  primaryText,
+  secondaryText,
+  tertiaryText,
+  buttonText
+) {
   const hero = document.createElement("div");
   hero.classList.add("hero");
 
@@ -6,21 +11,21 @@ export default function hero() {
   heroContainer.classList.add("hero-container");
 
   const h1 = document.createElement("h1");
-  h1.innerHTML = "Welcome";
+  h1.innerHTML = primaryText;
 
   const h2 = document.createElement("h2");
-  h2.innerHTML = "The HODL";
+  h2.innerHTML = secondaryText;
 
   const span = document.createElement("span");
   span.classList.add("line-before-after");
   span.innerHTML = '<i class="fas fa-star"></i>';
 
   const p = document.createElement("p");
-  p.innerHTML = "coming soon";
+  p.innerHTML = tertiaryText;
 
   const input = document.createElement("input");
   input.type = "button";
-  input.value = "Explore";
+  input.value = buttonText;
 
   heroContainer.appendChild(h1);
   heroContainer.appendChild(h2);
