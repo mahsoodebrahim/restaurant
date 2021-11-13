@@ -3,6 +3,9 @@ import about from "./screens/about/about";
 import menu from "./screens/menu/menu";
 import header from "./components/header";
 
+import "./reset.css";
+import "./style.css";
+
 // Create content container
 const content = document.getElementById("content");
 

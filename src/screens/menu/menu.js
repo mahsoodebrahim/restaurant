@@ -1,4 +1,3 @@
-import header from "../../components/header";
 import hero from "../../components/hero";
 
 export default function menu() {

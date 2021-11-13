@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Play&display=swap");
+
+/* Universal */
+:root {
+  --main-color: #fffbd0;
+  --secondary-color: #d6bf86;
+}
+
+body {
+  font-family: "Play", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body,
+a,
+.icon {
+  color: var(--main-color);
+}
+
+#content {
+  height: 100vh;
+  width: 100vw;
+  background: url("../src/images/grill-background-barbecue-fire-grill-close-up-isolated-black-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page */
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header,
+.navigation,
+.page-navigation,
+.social-icons {
+  display: flex;
+}
+
+header {
+  padding: 1em 10em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.navigation {
+  font-size: 1.25em;
+  align-items: center;
+}
+
+.navigation nav {
+  margin-right: 2em;
+}
+
+.page-navigation {
+  column-gap: 2em;
+}
+
+.social-icons {
+  column-gap: 1em;
+}
+
+.icon {
+  width: 1.25em;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.hero-container {
+  text-align: center;
+}
+
+.hero-container h1 {
+  font-size: 8em;
+  font-family: "Great Vibes", cursive;
+  color: var(--secondary-color);
+}
+
+.hero-container h2 {
+  font-size: 3.5em;
+}
+
+.hero-container p {
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+
+.hero-container p,
+.line-before-after {
+  margin-top: 0.5em;
+}
+
+.line-before-after {
+  display: block;
+  position: relative;
+}
+
+.line-before-after::before,
+.line-before-after::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 45%;
+  background: var(--main-color);
+  position: absolute;
+  top: 50%;
+}
+
+.line-before-after::before {
+  left: 0;
+}
+
+.line-before-after::after {
+  right: 0;
+}
+
+input[type="button"] {
+  border: none;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  background-color: var(--main-color);
+}
+
+input[type="button"]:hover {
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+}
