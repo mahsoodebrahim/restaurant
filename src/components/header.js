@@ -17,6 +17,7 @@ function titleLink(pageTitle) {
 
   const titleLink = document.createElement("a");
   titleLink.href = "#";
+  titleLink.id = "title-link";
   titleLink.appendChild(title);
 
   return titleLink;
@@ -47,6 +48,7 @@ function pageNavigation() {
     const a = document.createElement("a");
     a.href = "#";
     a.innerHTML = page;
+    a.id = `${page.toLowerCase()}-link`;
 
     li.appendChild(a);
     ul.appendChild(li);

@@ -6,9 +6,6 @@ export default function home() {
   homepage.id = "homepage";
   homepage.classList.add("page");
 
-  // Header Section
-  // homepage.appendChild(header());
-
   // Hero Section
   homepage.appendChild(
     hero("Welcome", "The Grill House", "Coming Soon", "Explore")

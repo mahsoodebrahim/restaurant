@@ -6,9 +6,6 @@ export default function menu() {
   menu.id = "menu-page";
   menu.classList.add("page");
 
-  // Header Section
-  menu.appendChild(header());
-
   // Hero Section
   menu.appendChild(hero("Menu", "World's Finest", "BBQ", "Menu"));
 
